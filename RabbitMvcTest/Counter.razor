@@ -1,0 +1,38 @@
+<h3>Tour Selection</h3>
+
+<label for="name">Name:</label><br><br>
+<input type="text" id="name" name="name" @bind=@nameVal><br><br>
+<label for="email">Email:</label><br><br>
+<input type="text" id="email" name="email" @bind=@emailVal><br><br>
+
+<label for="tours">Tours:</label><br><br>
+<select name="tours" id="tours">
+  <option value="hiking">Hiking</option>
+  <option value="fishing">Fishing</option>
+  <option value="bathing">Bathing</option>
+  <option value="staying Home">Staying Home</option>
+</select><br><br>
+
+<label>
+  <input type="radio" class="radio" id="book" value="1" checked="checked" name="radioBtn" @onclick="(() => { RadioBtnClicked(1); })" />Book </label>
+<label>
+  <input type="radio" class="radio" id="cancel" value="0" name="radioBtn" @onclick="(() => { RadioBtnClicked(0); })" />Cancel </label>
+<br><br>
+<button @onclick="Book" class="btn btn-primary">Submit</button>
+
+@code {
+    string nameVal = "";
+    string emailVal = "";
+    int radioSelection = 1;
+
+    private void Book(){
+        if(nameVal != "" && emailVal != ""){
+            nameVal = TourBooker.BookTour(nameVal, emailVal, radioSelection);
+        }
+        
+    }
+    private void RadioBtnClicked(int value){
+        radioSelection = value;
+    }
+    
+}
