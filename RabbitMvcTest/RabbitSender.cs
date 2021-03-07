@@ -21,7 +21,6 @@ namespace RabbitMvcTest
             using (var connection = CreateConnection())
             using (var channel = connection.CreateModel())
             {
-                var queueName = channel.QueueDeclare().QueueName;
                 var routingKey = "tour.booked";
                 channel.ConfirmSelect();
 

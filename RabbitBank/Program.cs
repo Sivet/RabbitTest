@@ -19,7 +19,7 @@ namespace RabbitBank
                     durable: true,
                     type: "topic");
 
-                var queueName = channel.QueueDeclare().QueueName;
+                var queueName = "tour_bookingQ";
 
                 channel.QueueBind(queue: queueName,
                                   exchange: "tour_booking",

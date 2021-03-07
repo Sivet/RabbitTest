@@ -1,10 +1,9 @@
 ﻿using System;
 using RabbitMQ.Client;
-using RabbitMQ.Client.Events;
 using System.Text;
-using System.Threading;
+using RabbitMQ.Client.Events;
 
-namespace RabbitEmail
+namespace DeadLetterLog
 {
     class Program
     {
@@ -15,16 +14,18 @@ namespace RabbitEmail
             using (var channel = connection.CreateModel())
             {
                 channel.ExchangeDeclare(
-                    exchange: "tour_booking", 
+                    exchange: "dead_letter",
                     durable: true,
-                    type: "topic");
+                    type: "topic"
+                    );
                 
-                var queueName = "tour_bookingQ";
+                var queueName = "dead_letterQ";
 
                 channel.QueueBind(
                     queue: queueName,
-                    exchange: "tour_booking",
-                    routingKey: "tour.booked");
+                    exchange: "dead_letter",
+                    routingKey: "dead_letter.*"
+                    );
 
                 Console.WriteLine(" [*] Waiting for messages. To exit press CTRL+C");
 
