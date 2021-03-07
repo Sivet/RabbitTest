@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Projects\\RabbitBank\\RabbitBank.csproj": {}
+    "F:\\Projects\\RabbitTest\\RabbitBank\\RabbitBank.csproj": {}
   },
   "projects": {
-    "F:\\Projects\\RabbitBank\\RabbitBank.csproj": {
+    "F:\\Projects\\RabbitTest\\RabbitBank\\RabbitBank.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Projects\\RabbitBank\\RabbitBank.csproj",
+        "projectUniqueName": "F:\\Projects\\RabbitTest\\RabbitBank\\RabbitBank.csproj",
         "projectName": "RabbitBank",
-        "projectPath": "F:\\Projects\\RabbitBank\\RabbitBank.csproj",
+        "projectPath": "F:\\Projects\\RabbitTest\\RabbitBank\\RabbitBank.csproj",
         "packagesPath": "C:\\Users\\simon\\.nuget\\packages\\",
-        "outputPath": "F:\\Projects\\RabbitBank\\obj\\",
+        "outputPath": "F:\\Projects\\RabbitTest\\RabbitBank\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

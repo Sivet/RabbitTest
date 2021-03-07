@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "d22wljI2Ur6/fAQjLP8z/pdB566OZLUMacgIOCS/gk+kiESaqvtZ9UYStyfiU0TWWZoTNAHEMh0+cWVZmDKErg==",
+  "dgSpecHash": "DDB5d5+sC+yPmUOhHWem7tX+Sm//NQ/Izw2yCzj/vNeZz3utxiCg5tQw0uveI1GgVxurlcnBrY2cNvybW4dDng==",
   "success": true,
-  "projectFilePath": "F:\\Projects\\RabbitBank\\RabbitBank.csproj",
+  "projectFilePath": "F:\\Projects\\RabbitTest\\RabbitBank\\RabbitBank.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\simon\\.nuget\\packages\\rabbitmq.client\\6.2.1\\rabbitmq.client.6.2.1.nupkg.sha512",
     "C:\\Users\\simon\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",

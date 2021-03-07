@@ -14,32 +14,32 @@ namespace RabbitBank
             using (var connection = factory.CreateConnection())
             using (var channel = connection.CreateModel())
             {
-                channel.QueueDeclare(queue: "tour_queue",
-                                 durable: true,
-                                 exclusive: false,
-                                 autoDelete: false,
-                                 arguments: null
-                                 );
+                channel.ExchangeDeclare(
+                    exchange: "tour_booking",
+                    durable: true,
+                    type: "topic");
+
+                var queueName = channel.QueueDeclare().QueueName;
+
+                channel.QueueBind(queue: queueName,
+                                  exchange: "tour_booking",
+                                  routingKey: "tour.*");
 
 
-                channel.BasicQos(prefetchSize: 0, prefetchCount: 1, global: false);
+                Console.WriteLine(" [*] Waiting for messages. To exit press CTRL+C");
 
                 var consumer = new EventingBasicConsumer(channel);
-                consumer.Received += (sender, ea) =>
+                consumer.Received += (model, ea) =>
                 {
                     var body = ea.Body.ToArray();
                     var message = Encoding.UTF8.GetString(body);
-                    Console.WriteLine(" [x] Received {0}", message);
-
-                    int dots = message.Split('.').Length - 1;
-                    Thread.Sleep(dots * 1000); //Fake Work
-
-                    Console.WriteLine(" [x] Done");
-
-                channel.BasicAck(deliveryTag: ea.DeliveryTag, multiple: false);
+                    var routingKey = ea.RoutingKey;
+                    Console.WriteLine(" [x] Received '{0}':'{1}'",
+                                      routingKey,
+                                      message);
                 };
-                channel.BasicConsume(queue: "tour_queue",
-                                     autoAck: false,
+                channel.BasicConsume(queue: queueName,
+                                     autoAck: true,
                                      consumer: consumer);
 
                 Console.WriteLine(" Press [enter] to exit.");
