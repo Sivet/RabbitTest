@@ -11,7 +11,6 @@ namespace RabbitMvcTest
 {
     public class RabbitSender
     {
-        private const int messageCount = 50_000;
         private static IConnection CreateConnection()
         {
             var factory = new ConnectionFactory { HostName = "localhost" };
@@ -68,7 +67,7 @@ namespace RabbitMvcTest
                     throw new Exception("All messages could not be confirmed in 60 seconds");
 
                 timer.Stop();
-                Console.WriteLine($"Published {messageCount:N0} messages and handled confirm asynchronously {timer.ElapsedMilliseconds:N0} ms");
+                Console.WriteLine($"Published <{message}> and handled confirm asynchronously {timer.ElapsedMilliseconds:N0} ms");
                 //ToDo log?
             }
         }
@@ -83,22 +82,5 @@ namespace RabbitMvcTest
 
             return condition();
         }
-        /*var factory = new ConnectionFactory() { HostName = "localhost" };
-        using (var connection = factory.CreateConnection())
-        using (var channel = connection.CreateModel())
-        {
-            channel.ExchangeDeclare(
-                exchange: "tour_booking",
-                durable: true,
-                type: "topic");
-
-            var routingKey = "tour.booked";
-            var body = Encoding.UTF8.GetBytes(message);
-
-            channel.BasicPublish(exchange: "tour_booking",
-                             routingKey: routingKey,
-                             basicProperties: null,
-                             body: body);
-        }*/
     }
 }
