@@ -808,11 +808,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Projects\\RabbitMvcTest\\RabbitMvcTest.csproj",
+      "projectUniqueName": "F:\\Projects\\RabbitTest\\RabbitMvcTest\\RabbitMvcTest.csproj",
       "projectName": "RabbitMvcTest",
-      "projectPath": "F:\\Projects\\RabbitMvcTest\\RabbitMvcTest.csproj",
+      "projectPath": "F:\\Projects\\RabbitTest\\RabbitMvcTest\\RabbitMvcTest.csproj",
       "packagesPath": "C:\\Users\\simon\\.nuget\\packages\\",
-      "outputPath": "F:\\Projects\\RabbitMvcTest\\obj\\",
+      "outputPath": "F:\\Projects\\RabbitTest\\RabbitMvcTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -4,10 +4,10 @@ namespace RabbitMvcTest
 {
     public class TourBooker{
 
-        public static string BookTour(string name, string email, int value){
-            RabbitSender.Send(name + ',' + email + ',' + value);
+        public static void BookTour(string name, string email, int book, string tour){
+            RabbitSender.Send(name + ',' + email + ',' + book + ',' + tour);
             
-            return name + value.ToString();
+            //return name + value.ToString(); //just for testing blazor
         }
     }
 }

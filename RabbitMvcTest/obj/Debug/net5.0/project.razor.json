@@ -1,5 +1,5 @@
 {
-  "FilePath": "f:\\Projects\\RabbitMvcTest\\RabbitMvcTest.csproj",
+  "FilePath": "f:\\Projects\\RabbitTest\\RabbitMvcTest\\RabbitMvcTest.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "5.0",
@@ -11,6 +11,39 @@
   },
   "ProjectWorkspaceState": {
     "TagHelpers": [
+      {
+        "HashCode": -208882848,
+        "Kind": "Components.Component",
+        "Name": "RabbitMvcTest.TourSelection",
+        "AssemblyName": "RabbitMvcTest",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "TourSelection"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "RabbitMvcTest.TourSelection"
+        }
+      },
+      {
+        "HashCode": -785369105,
+        "Kind": "Components.Component",
+        "Name": "RabbitMvcTest.TourSelection",
+        "AssemblyName": "RabbitMvcTest",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "RabbitMvcTest.TourSelection"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "RabbitMvcTest.TourSelection",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
       {
         "HashCode": -127944600,
         "Kind": "Components.Component",
@@ -15603,48 +15636,48 @@
   "RootNamespace": "RabbitMvcTest",
   "Documents": [
     {
-      "FilePath": "f:\\Projects\\RabbitMvcTest\\_Imports.razor",
-      "TargetPath": "_Imports.razor",
-      "FileKind": "componentImport"
-    },
-    {
-      "FilePath": "f:\\Projects\\RabbitMvcTest\\Views\\Home\\Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "f:\\Projects\\RabbitMvcTest\\Views\\Home\\Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "f:\\Projects\\RabbitMvcTest\\Views\\Shared\\_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "f:\\Projects\\RabbitMvcTest\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FilePath": "f:\\Projects\\RabbitTest\\RabbitMvcTest\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "f:\\Projects\\RabbitMvcTest\\Views\\Shared\\Error.cshtml",
+      "FilePath": "f:\\Projects\\RabbitTest\\RabbitMvcTest\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "f:\\Projects\\RabbitTest\\RabbitMvcTest\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "f:\\Projects\\RabbitTest\\RabbitMvcTest\\TourSelection.razor",
+      "TargetPath": "TourSelection.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "f:\\Projects\\RabbitTest\\RabbitMvcTest\\_Imports.razor",
+      "TargetPath": "_Imports.razor",
+      "FileKind": "componentImport"
+    },
+    {
+      "FilePath": "f:\\Projects\\RabbitTest\\RabbitMvcTest\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "f:\\Projects\\RabbitTest\\RabbitMvcTest\\Views\\Shared\\Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "f:\\Projects\\RabbitMvcTest\\Counter.razor",
-      "TargetPath": "Counter.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "f:\\Projects\\RabbitMvcTest\\Views\\_ViewImports.cshtml",
+      "FilePath": "f:\\Projects\\RabbitTest\\RabbitMvcTest\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "f:\\Projects\\RabbitMvcTest\\Views\\_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FilePath": "f:\\Projects\\RabbitTest\\RabbitMvcTest\\Views\\Home\\Privacy.cshtml",
+      "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
     }
   ],

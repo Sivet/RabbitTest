@@ -1,5 +1,7 @@
 using System.Text;
+using System.Threading;
 using RabbitMQ.Client;
+using RabbitMQ.Client.Events;
 
 namespace RabbitMvcTest
 {
@@ -12,21 +14,25 @@ namespace RabbitMvcTest
             using (var connection = factory.CreateConnection())
             using (var channel = connection.CreateModel())
             {
-                channel.ExchangeDeclare(exchange: "tour_booking",
-                                        type: "topic");
-
-                var routingKey = "tour.booked";
+                channel.QueueDeclare(
+                    queue: "tour_queue",
+                    durable: true,
+                    exclusive: false,
+                    autoDelete: false,
+                    arguments: null
+                    );
+                
                 var body = Encoding.UTF8.GetBytes(message);
 
-                channel.BasicPublish(exchange: "tour_booking",
-                                 routingKey: routingKey,
-                                 basicProperties: null,
-                                 body: body);
-                //Console.WriteLine(" [x] Sent {0}", message);
-            }
+                var properties = channel.CreateBasicProperties();
+                properties.Persistent = true;
 
-            //Console.WriteLine(" Press [enter] to exit.");
-            //Console.ReadLine();
+                channel.BasicPublish(exchange: "",
+                        routingKey: "tour_queue",
+                        basicProperties: properties,
+                        body: body
+                        );
+            }
         }
     }
 }

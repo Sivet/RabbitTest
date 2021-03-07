@@ -68,13 +68,35 @@ using RabbitMvcTest;
 #line default
 #line hidden
 #nullable disable
-    public partial class _Imports : System.Object
+    public partial class TourSelection : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
-        protected void Execute()
+        protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 23 "F:\Projects\RabbitTest\RabbitMvcTest\TourSelection.razor"
+       
+    string nameVal = "";
+    string emailVal = "";
+    string tourSelection = "";
+    int radioSelection = 1;
+
+    private void Book(){
+        if(nameVal != "" && emailVal != ""){
+            TourBooker.BookTour(nameVal, emailVal, radioSelection, tourSelection);
+        }
+        
+    }
+    private void RadioBtnClicked(int value){
+        radioSelection = value;
+    }
+    
+
+#line default
+#line hidden
+#nullable disable
     }
 }
 #pragma warning restore 1591

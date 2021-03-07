@@ -115,11 +115,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Projects\\RabbitEmail\\RabbitEmail.csproj",
+      "projectUniqueName": "F:\\Projects\\RabbitTest\\RabbitEmail\\RabbitEmail.csproj",
       "projectName": "RabbitEmail",
-      "projectPath": "F:\\Projects\\RabbitEmail\\RabbitEmail.csproj",
+      "projectPath": "F:\\Projects\\RabbitTest\\RabbitEmail\\RabbitEmail.csproj",
       "packagesPath": "C:\\Users\\simon\\.nuget\\packages\\",
-      "outputPath": "F:\\Projects\\RabbitEmail\\obj\\",
+      "outputPath": "F:\\Projects\\RabbitTest\\RabbitEmail\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

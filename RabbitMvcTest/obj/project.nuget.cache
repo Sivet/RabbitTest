@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PUJMeA1ahgeuQwG+UDLzFPRjVeiAdVb0mBquiaxa2FEELkM3/c4SqR85iNUX5lc1ZHawo7fELA15lUeLw9+i6g==",
+  "dgSpecHash": "4f+F+THOoHGP/hx/n5u6SvbkU+8nKS4VgCWljH9jgoljtZDuFFYhbkPEt+QBEDjvlkWp6pYJmtThRqbwLtB4Vg==",
   "success": true,
-  "projectFilePath": "F:\\Projects\\RabbitMvcTest\\RabbitMvcTest.csproj",
+  "projectFilePath": "F:\\Projects\\RabbitTest\\RabbitMvcTest\\RabbitMvcTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\simon\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\5.0.3\\microsoft.aspnetcore.mvc.razor.extensions.5.0.3.nupkg.sha512",
     "C:\\Users\\simon\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.runtimecompilation\\5.0.3\\microsoft.aspnetcore.mvc.razor.runtimecompilation.5.0.3.nupkg.sha512",

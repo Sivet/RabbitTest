@@ -6,7 +6,7 @@
 <input type="text" id="email" name="email" @bind=@emailVal><br><br>
 
 <label for="tours">Tours:</label><br><br>
-<select name="tours" id="tours">
+<select name="tours" id="tours" @bind=@tourSelection>>
   <option value="hiking">Hiking</option>
   <option value="fishing">Fishing</option>
   <option value="bathing">Bathing</option>
@@ -23,11 +23,12 @@
 @code {
     string nameVal = "";
     string emailVal = "";
+    string tourSelection = "";
     int radioSelection = 1;
 
     private void Book(){
         if(nameVal != "" && emailVal != ""){
-            nameVal = TourBooker.BookTour(nameVal, emailVal, radioSelection);
+            TourBooker.BookTour(nameVal, emailVal, radioSelection, tourSelection);
         }
         
     }
